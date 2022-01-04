@@ -7,7 +7,7 @@ module.exports = function toReadable(number) {
     arr10_19Names = ['ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
     arrOnesNames = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
 
-    let numStr = number.toSting();
+    let numStr = String(number);
     let countDigits = numStr.length;
 
     hundredName = countDigits == 3 ? arrOnesNames[Number(numStr[countDigits-3])] + ' hundred' : '';
